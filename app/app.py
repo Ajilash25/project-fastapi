@@ -7,8 +7,8 @@ app = FastAPI(title="Deployment App")
 @app.get("/")
 def home():
     return {
-        "status": "online",
-        "message": "FastAPI deployed successfully!"
+        "status": "Joothan",
+        "message": "Njaan JOOOOTHEEEEESH! Goyim Poristein"
     }
 
 if __name__ == "__main__":
