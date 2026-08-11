@@ -20,11 +20,11 @@ spec:
         image: ajilash25/project-fastapi:latest
         imagePullPolicy: Always
         ports:
-        - containerPort: 5000
+        - containerPort: 8000
         livenessProbe:
           httpGet:
             path: /healthz
-            port: 5000
+            port: 8000
           initialDelaySeconds: 5
           periodSeconds: 10
         resources:
