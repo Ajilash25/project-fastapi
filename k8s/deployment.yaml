@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: fast-container
-        image: ajilash25/project-fastapi:2
+        image: ajilash25/project-fastapi:3
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
