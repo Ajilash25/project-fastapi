@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flask-app
+  name: project-fastapi
   namespace: default
   labels:
-    app: flask-app
+    app: project-fastapi
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: flask-app
+      app: project-fastapi
   template:
     metadata:
       labels:
-        app: flask-app
+        app: project-fastapi
     spec:
       containers:
-      - name: flask-container
-        image: your-docker-hub-username/static-website:latest
+      - name: fast-container
+        image: ajilash25/project-fastapi:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
